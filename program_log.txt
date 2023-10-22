@@ -1,0 +1,26 @@
+2023-10-19 12:49:40,411, DEBUG, Starting new HTTPS connection (1): practicum.yandex.ru:443
+2023-10-19 12:49:40,787, DEBUG, https://practicum.yandex.ru:443 "GET /api/user_api/homework_statuses/?from_date=1697708980 HTTP/1.1" 200 42
+2023-10-19 12:49:40,789, INFO, Ответ от API получен.
+2023-10-19 12:49:40,791, DEBUG, Отсутствие в ответе новых статусов.
+2023-10-19 12:49:40,792, DEBUG, Entering: send_message
+2023-10-19 12:49:41,226, ERROR, Сбой при отправке сообщения в Telegram: Unauthorized
+2023-10-19 12:49:41,226, ERROR, Сбой в работе программы: 'last_attempt_timestamp'
+2023-10-19 13:08:10,701, DEBUG, Starting new HTTPS connection (1): practicum.yandex.ru:443
+2023-10-19 13:08:10,927, DEBUG, https://practicum.yandex.ru:443 "GET /api/user_api/homework_statuses/?from_date=1697710090 HTTP/1.1" 200 42
+2023-10-19 13:08:10,929, INFO, Ответ от API получен.
+2023-10-19 13:08:10,931, DEBUG, Отсутствие в ответе новых статусов.
+2023-10-19 13:08:10,931, DEBUG, Entering: send_message
+2023-10-19 13:08:11,189, ERROR, Сбой при отправке сообщения в Telegram: Chat not found
+2023-10-19 13:08:11,189, ERROR, Сбой в работе программы: 'last_attempt_timestamp'
+2023-10-19 13:18:11,380, DEBUG, Starting new HTTPS connection (1): practicum.yandex.ru:443
+2023-10-19 13:18:11,644, DEBUG, https://practicum.yandex.ru:443 "GET /api/user_api/homework_statuses/?from_date=1697710090 HTTP/1.1" 200 42
+2023-10-19 13:18:11,647, INFO, Ответ от API получен.
+2023-10-19 13:18:11,651, DEBUG, Отсутствие в ответе новых статусов.
+2023-10-19 13:18:11,651, DEBUG, Entering: send_message
+2023-10-19 13:18:12,092, ERROR, Сбой при отправке сообщения в Telegram: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-10-19 13:18:12,092, ERROR, Сбой в работе программы: 'last_attempt_timestamp'
+2023-10-20 17:19:31,491, DEBUG, Starting new HTTPS connection (1): practicum.yandex.ru:443
+2023-10-20 17:19:31,901, DEBUG, https://practicum.yandex.ru:443 "GET /api/user_api/homework_statuses/?from_date=1697811571 HTTP/1.1" 200 42
+2023-10-20 17:19:31,903, INFO, Ответ от API получен.
+2023-10-20 17:19:31,906, DEBUG, Отсутствие в ответе новых статусов.
+2023-10-20 17:19:31,906, DEBUG, Entering: send_message
