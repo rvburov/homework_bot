@@ -24,3 +24,15 @@
 2023-10-20 17:19:31,903, INFO, Ответ от API получен.
 2023-10-20 17:19:31,906, DEBUG, Отсутствие в ответе новых статусов.
 2023-10-20 17:19:31,906, DEBUG, Entering: send_message
+2023-10-23 00:13:13,425, DEBUG, Starting new HTTPS connection (1): practicum.yandex.ru:443
+2023-10-23 00:13:13,680, DEBUG, https://practicum.yandex.ru:443 "GET /api/user_api/homework_statuses/?from_date=1698009193 HTTP/1.1" 200 42
+2023-10-23 00:13:13,683, DEBUG, Отсутствие в ответе новых статусов.
+2023-10-23 00:13:13,683, DEBUG, Entering: send_message
+2023-10-23 00:13:59,262, DEBUG, Starting new HTTPS connection (1): practicum.yandex.ru:443
+2023-10-23 00:13:59,472, DEBUG, https://practicum.yandex.ru:443 "GET /api/user_api/homework_statuses/?from_date=1698009239 HTTP/1.1" 200 42
+2023-10-23 00:38:22,859, DEBUG, Starting new HTTPS connection (1): practicum.yandex.ru:443
+2023-10-23 00:38:23,392, DEBUG, https://practicum.yandex.ru:443 "GET /api/user_api/homework_statuses/?from_date=1698010702 HTTP/1.1" 200 42
+2023-10-23 22:37:10,563, DEBUG, Starting new HTTPS connection (1): practicum.yandex.ru:443
+2023-10-23 22:37:11,209, DEBUG, https://practicum.yandex.ru:443 "GET /api/user_api/homework_statuses/?from_date=1698089830 HTTP/1.1" 200 42
+2023-10-24 23:26:35,937, DEBUG, Starting new HTTPS connection (1): practicum.yandex.ru:443
+2023-10-24 23:26:36,480, DEBUG, https://practicum.yandex.ru:443 "GET /api/user_api/homework_statuses/?from_date=1698179195 HTTP/1.1" 200 42

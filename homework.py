@@ -42,13 +42,13 @@ logging.basicConfig(
 
 def check_tokens():
     """Проверка токенов."""
-    return all([PRACTICUM_TOKEN, TELEGRAM_CHAT_ID, TELEGRAM_TOKEN])
+    return all((PRACTICUM_TOKEN, TELEGRAM_CHAT_ID, TELEGRAM_TOKEN))
 
 
 def send_message(bot, message):
     """Отправка сообщения."""
     bot.send_message(chat_id=TELEGRAM_CHAT_ID, text=message)
-    logging.debug("Удачная отправка сообщения в Telegram.")
+    logging.debug('Удачная отправка сообщения в Telegram.')
 
 
 def get_api_answer(timestamp):
@@ -64,16 +64,14 @@ def get_api_answer(timestamp):
             raise exceptions.ApiConnectError(
                 "Ответ от API не получен."
             )
-        try:
-            data = response.json()
-        except JSONDecodeError as json_error:
-            raise exceptions.ApiResponseError(f'Ошибка при разборе JSON: '
-                                              f'{json_error}')
+        return response.json()
+    except JSONDecodeError as json_error:
+        raise exceptions.ApiResponseError(f'Ошибка при разборе JSON: '
+                                          f'{json_error}')
     except RequestException as error:
         raise exceptions.ApiConnectError(
             f'При обращении к API возникла ошибка: '
             f'{error}')
-    return data
 
 
 def check_response(response):
@@ -131,6 +129,9 @@ def main():
                     new_status = homework[0]['status']
         except telegram.error.TelegramError as error:
             error_message = f'Ошибка при отправке сообщения: {error}'
+            logging.error(error_message)
+        except Exception as other_error:
+            error_message = f'Произошла ошибка: {other_error}'
             logging.error(error_message)
         finally:
             time.sleep(RETRY_PERIOD)
